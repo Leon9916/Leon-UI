@@ -1,13 +1,11 @@
+
 <script setup lang="ts">
 import { Button } from "ant-design-vue";
-import { SearchOutlined } from "@ant-design/icons-vue";
-
 </script>
 
 <template>
-  <Button danger>
-    <template #icon><SearchOutlined /></template>
-    <slot></slot>
+  <Button>
+    <slot v-for="name in Object.keys($slots)" :name="name"></slot>
   </Button>
 </template>
 

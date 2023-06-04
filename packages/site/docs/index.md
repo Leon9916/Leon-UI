@@ -2,16 +2,16 @@
 layout: home
 
 title: Leon UI
-titleTemplate: 基于antd进行二次封装的UI组件库
+titleTemplate: 基于Ant Design进行二次封装的UI组件库
 
 hero:
   name: Leon UI
-  text: 基于antd进行二次封装的UI组件库
+  text: 基于Ant Design进行二次封装的UI组件库
   # tagline: 简单、强大和快。你一直想要满足现代江源发展促进会框架。
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/what-is-vitepress
+      link: /components/Button.html
     # - theme: alt
     #   text: View on GitHub
     #   link: https://github.com/vuejs/vitepress

@@ -1,289 +1,65 @@
-## 快速上手
+<p align="center">
+  <a href="https://www.antdv.com/">
+    <img width="200" src="https://qn.antdv.com/logo.png">
+  </a>
+</p>
 
-本节将介绍如何在项目中使用 Element。
+<h1 align="center">
+  <a href="https://www.antdv.com/" target="_blank">Ant Design Vue</a>
+</h1>
 
-### 使用 vue-cli@3
+<div align="center">
 
-我们为新版的 vue-cli 准备了相应的 [Element 插件](https://github.com/ElementUI/vue-cli-plugin-element)，你可以用它们快速地搭建一个基于 Element 的项目。
+An enterprise-class UI components based on Ant Design and Vue 3.
 
-### 使用 Starter Kit
+![test](https://github.com/vueComponent/ant-design-vue/workflows/test/badge.svg) [![codecov](https://img.shields.io/codecov/c/github/vueComponent/ant-design-vue/master.svg?style=flat-square)](https://codecov.io/gh/vueComponent/ant-design-vue) [![npm package](https://img.shields.io/npm/v/ant-design-vue.svg?style=flat-square)](https://www.npmjs.org/package/ant-design-vue) [![NPM downloads](http://img.shields.io/npm/dm/ant-design-vue.svg?style=flat-square)](http://www.npmtrends.com/ant-design-vue) [![backers](https://opencollective.com/ant-design-vue/backers/badge.svg)](#backers) [![sponsors](https://opencollective.com/ant-design-vue/sponsors/badge.svg)](#sponsors) [![extension-for-VSCode](https://img.shields.io/badge/extension%20for-VSCode-blue.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=ant-design-vue.vscode-ant-design-vue-helper) [![issues-helper](https://img.shields.io/badge/Issues%20Manage%20By-issues--helper-orange?style=flat-square)](https://github.com/actions-cool/issues-helper)
 
-我们提供了通用的[项目模板](https://github.com/ElementUI/element-starter)，你可以直接使用。对于 Laravel 用户，我们也准备了相应的[模板](https://github.com/ElementUI/element-in-laravel-starter)，同样可以直接下载使用。
+</div>
 
-如果不希望使用我们提供的模板，请继续阅读。
+[![](https://cdn-images-1.medium.com/max/2000/1*NIlj0-TdLMbo_hzSBP8tmg.png)](https://www.antdv.com/)
 
-### 引入 Element
+<!-- [English](./README.md) | 简体中文 -->
 
-你可以引入整个 Element，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 Element。
+## 特性
 
-#### 完整引入
+- 基于Ant Design进行二次封装的UI组件库，使用方法和Ant Design官方文档并无差异
+- 提炼自企业级中后台产品的交互语言和视觉风格。
+- 开箱即用的高质量 Vue 组件。
+- 共享 [Ant Design of React](http://ant-design.gitee.io/docs/spec/introduce-cn) 设计工具体系。
 
-在 main.js 中写入以下内容：
+## 支持环境
 
-```javascript
-import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-import App from './App.vue';
+- 现代浏览器。1.x 版本支持 IE 9+（需要 [polyfills](https://www.antdv.com/docs/vue/getting-started-cn/#兼容性)）
+- 支持服务端渲染。
+- [Electron](https://electronjs.org/)
+- 支持 Vue 3
 
-Vue.use(ElementUI);
+## 安装
 
-new Vue({
-  el: '#app',
-  render: h => h(App)
-});
-```
-
-以上代码便完成了 Element 的引入。需要注意的是，样式文件需要单独引入。
-
-#### 按需引入
-
-借助 [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)，我们可以只引入需要的组件，以达到减小项目体积的目的。
-
-首先，安装 babel-plugin-component：
+### 使用 npm 或 yarn 安装
 
 ```bash
-npm install babel-plugin-component -D
+$ npm install Leon-ui --save
 ```
 
-然后，将 .babelrc 修改为：
-
-```json
-{
-  "presets": [["es2015", { "modules": false }]],
-  "plugins": [
-    [
-      "component",
-      {
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-chalk"
-      }
-    ]
-  ]
-}
+```bash
+$ yarn add Leon-ui
 ```
 
-接下来，如果你只希望引入部分组件，比如 Button 和 Select，那么需要在 main.js 中写入以下内容：
+如果你的网络环境不佳，推荐使用 [cnpm](https://github.com/cnpm/cnpm)。
 
-```javascript
-import Vue from 'vue';
-import { Button, Select } from 'element-ui';
-import App from './App.vue';
+## 链接
 
-Vue.component(Button.name, Button);
-Vue.component(Select.name, Select);
-/* 或写为
- * Vue.use(Button)
- * Vue.use(Select)
- */
+- [首页](https://www.antdv.com/)
+- [Vue 官方文档](https://cn.vuejs.org/)
+- [Ant Design Of React](http://ant.design/)
 
-new Vue({
-  el: '#app',
-  render: h => h(App)
-});
-```
+## 生态
 
-完整组件列表和引入方式（完整组件列表以 [components.json](https://github.com/ElemeFE/element/blob/master/components.json) 为准）
-
-```javascript
-import Vue from 'vue';
-import {
-  Pagination,
-  Dialog,
-  Autocomplete,
-  Dropdown,
-  DropdownMenu,
-  DropdownItem,
-  Menu,
-  Submenu,
-  MenuItem,
-  MenuItemGroup,
-  Input,
-  InputNumber,
-  Radio,
-  RadioGroup,
-  RadioButton,
-  Checkbox,
-  CheckboxButton,
-  CheckboxGroup,
-  Switch,
-  Select,
-  Option,
-  OptionGroup,
-  Button,
-  ButtonGroup,
-  Table,
-  TableColumn,
-  DatePicker,
-  TimeSelect,
-  TimePicker,
-  Popover,
-  Tooltip,
-  Breadcrumb,
-  BreadcrumbItem,
-  Form,
-  FormItem,
-  Tabs,
-  TabPane,
-  Tag,
-  Tree,
-  Alert,
-  Slider,
-  Icon,
-  Row,
-  Col,
-  Upload,
-  Progress,
-  Spinner,
-  Badge,
-  Card,
-  Rate,
-  Steps,
-  Step,
-  Carousel,
-  CarouselItem,
-  Collapse,
-  CollapseItem,
-  Cascader,
-  ColorPicker,
-  Transfer,
-  Container,
-  Header,
-  Aside,
-  Main,
-  Footer,
-  Timeline,
-  TimelineItem,
-  Link,
-  Divider,
-  Image,
-  Calendar,
-  Backtop,
-  PageHeader,
-  CascaderPanel,
-  Loading,
-  MessageBox,
-  Message,
-  Notification
-} from 'element-ui';
-
-Vue.use(Pagination);
-Vue.use(Dialog);
-Vue.use(Autocomplete);
-Vue.use(Dropdown);
-Vue.use(DropdownMenu);
-Vue.use(DropdownItem);
-Vue.use(Menu);
-Vue.use(Submenu);
-Vue.use(MenuItem);
-Vue.use(MenuItemGroup);
-Vue.use(Input);
-Vue.use(InputNumber);
-Vue.use(Radio);
-Vue.use(RadioGroup);
-Vue.use(RadioButton);
-Vue.use(Checkbox);
-Vue.use(CheckboxButton);
-Vue.use(CheckboxGroup);
-Vue.use(Switch);
-Vue.use(Select);
-Vue.use(Option);
-Vue.use(OptionGroup);
-Vue.use(Button);
-Vue.use(ButtonGroup);
-Vue.use(Table);
-Vue.use(TableColumn);
-Vue.use(DatePicker);
-Vue.use(TimeSelect);
-Vue.use(TimePicker);
-Vue.use(Popover);
-Vue.use(Tooltip);
-Vue.use(Breadcrumb);
-Vue.use(BreadcrumbItem);
-Vue.use(Form);
-Vue.use(FormItem);
-Vue.use(Tabs);
-Vue.use(TabPane);
-Vue.use(Tag);
-Vue.use(Tree);
-Vue.use(Alert);
-Vue.use(Slider);
-Vue.use(Icon);
-Vue.use(Row);
-Vue.use(Col);
-Vue.use(Upload);
-Vue.use(Progress);
-Vue.use(Spinner);
-Vue.use(Badge);
-Vue.use(Card);
-Vue.use(Rate);
-Vue.use(Steps);
-Vue.use(Step);
-Vue.use(Carousel);
-Vue.use(CarouselItem);
-Vue.use(Collapse);
-Vue.use(CollapseItem);
-Vue.use(Cascader);
-Vue.use(ColorPicker);
-Vue.use(Transfer);
-Vue.use(Container);
-Vue.use(Header);
-Vue.use(Aside);
-Vue.use(Main);
-Vue.use(Footer);
-Vue.use(Timeline);
-Vue.use(TimelineItem);
-Vue.use(Link);
-Vue.use(Divider);
-Vue.use(Image);
-Vue.use(Calendar);
-Vue.use(Backtop);
-Vue.use(PageHeader);
-Vue.use(CascaderPanel);
-
-Vue.use(Loading.directive);
-
-Vue.prototype.$loading = Loading.service;
-Vue.prototype.$msgbox = MessageBox;
-Vue.prototype.$alert = MessageBox.alert;
-Vue.prototype.$confirm = MessageBox.confirm;
-Vue.prototype.$prompt = MessageBox.prompt;
-Vue.prototype.$notify = Notification;
-Vue.prototype.$message = Message;
-```
-
-### 全局配置
-
-在引入 Element 时，可以传入一个全局配置对象。该对象目前支持 `size` 与 `zIndex` 字段。`size` 用于改变组件的默认尺寸，`zIndex` 设置弹框的初始 z-index（默认值：2000）。按照引入 Element 的方式，具体操作如下：
-
-完整引入 Element：
-
-```js
-import Vue from 'vue';
-import Element from 'element-ui';
-Vue.use(Element, { size: 'small', zIndex: 3000 });
-```
-
-按需引入 Element：
-
-```js
-import Vue from 'vue';
-import { Button } from 'element-ui';
-
-Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
-Vue.use(Button);
-```
-
-按照以上设置，项目中所有拥有 `size` 属性的组件的默认尺寸均为 'small'，弹框的初始 z-index 为 3000。
-
-### 开始使用
-
-至此，一个基于 Vue 和 Element 的开发环境已经搭建完毕，现在就可以编写代码了。各个组件的使用方法请参阅它们各自的文档。
-
-### 使用 Nuxt.js
-
-我们还可以使用 [Nuxt.js](https://nuxtjs.org)：
-
-<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe src="https://glitch.com/embed/#!/embed/nuxt-with-element?path=nuxt.config.js&previewSize=0&attributionHidden=true" alt="nuxt-with-element on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
-</div>
+| Project | Description |
+| --- | --- |
+| [vue-ref](https://github.com/vueComponent/vue-ref) | 您可以使用回调来获取组件的引用，类似 react |
+| [ant-design-vue-helper](https://marketplace.visualstudio.com/items?itemName=ant-design-vue.vscode-ant-design-vue-helper) | ant-design-vue 的 vscode 扩展 |
+| [vue-cli-plugin-ant-design](https://github.com/vueComponent/vue-cli-plugin-ant-design) | 使用 vue-cli3 快速使用 ant-design-vue 组件库 |
+| [vue-dash-event](https://github.com/vueComponent/vue-dash-event) | 在 DOM 模板中，您可以使用 ant-design-vue 组件的自定义事件（camelCase） |
+| [@formily/antdv](https://github.com/formilyjs/antdv) | 这是一个结合了 Formily 和 ant-design-vue 的组件库 |
