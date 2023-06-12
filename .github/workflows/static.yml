@@ -35,11 +35,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
+          name: 'artifact'
           path: packages/site/docs/.vitepress/dist
-      - name: Download artifact
-        uses: actions/download-artifact@v2
       - name: Deploy to Pages
         uses: actions/deploy-pages@v2
         with:
+          artifact_name: 'artifact'
           token: ${{ secrets.LEON9916 }}
           cleanup: true
