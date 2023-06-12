@@ -24,8 +24,8 @@
 - 禁用：行动点不可用的时候，一般需要文案解释。
 - 加载中：用于异步操作等待反馈的时候，也可以避免多次提交。
 
-<demo src="@/demo/button/demo.vue"></demo>
-<demo src="@/demo/button/demo.vue" title="幽灵按钮" desc="幽灵按钮将按钮的内容反色，背景变为透明，常用在有色背景上。"></demo>
+<demo src="../demo/button/demo.vue"></demo>
+<demo src="../demo/button/demo.vue" title="幽灵按钮" desc="幽灵按钮将按钮的内容反色，背景变为透明，常用在有色背景上。"></demo>
 
 ### 属性
 

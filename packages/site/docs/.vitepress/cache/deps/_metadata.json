@@ -1,23 +1,23 @@
 {
-  "hash": "d30687bf",
-  "browserHash": "12cc5557",
+  "hash": "bdd7b7f6",
+  "browserHash": "1b0d0318",
   "optimized": {
     "vue": {
       "src": "../../../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "391e7bfc",
+      "fileHash": "17ffdbdb",
       "needsInterop": false
     },
     "vite-plugin-vitepress-demo/theme": {
       "src": "../../../../../../node_modules/.pnpm/vite-plugin-vitepress-demo@2.0.0-alpha.8_vitepress@1.0.0-alpha.63_vue@3.3.4/node_modules/vite-plugin-vitepress-demo/dist/theme/index.mjs",
       "file": "vite-plugin-vitepress-demo_theme.js",
-      "fileHash": "bf957119",
+      "fileHash": "9127791a",
       "needsInterop": false
     },
     "ant-design-vue": {
       "src": "../../../../../../node_modules/.pnpm/ant-design-vue@3.2.20_vue@3.2.36/node_modules/ant-design-vue/es/index.js",
       "file": "ant-design-vue.js",
-      "fileHash": "18e5c737",
+      "fileHash": "9529c9a1",
       "needsInterop": false
     }
   },
