@@ -27,7 +27,9 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: pnpm install
+        with:
+          frozen-lockfile: false
+          run: pnpm install
       - name: Build docs
         run: pnpm run docs:build
       - name: Upload artifact
