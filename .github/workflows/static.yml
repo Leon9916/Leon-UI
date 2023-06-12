@@ -42,5 +42,5 @@ jobs:
         with:
           token: ${{ secrets.LEON9916 }}
           artifact_name: dist
-          publish_dir: packages/site/docs/.vitepress/dist
+          target_dir: packages/site/docs/.vitepress/dist
           cleanup: true
