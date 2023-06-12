@@ -33,7 +33,7 @@ jobs:
       - name: Build docs
         run: pnpm run docs:build
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dist
           path: packages/site/docs/.vitepress/dist
