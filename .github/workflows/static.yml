@@ -38,9 +38,9 @@ jobs:
           name: dist
           path: packages/site/docs/.vitepress/dist
       - name: Deploy to Pages
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v2
         with:
           token: ${{ secrets.LEON9916 }}
           artifact_name: dist
-          publish_dir: packages/site/docs/.vitepress/dist
+          target_dir: packages/site/docs/.vitepress/dist
           cleanup: true
