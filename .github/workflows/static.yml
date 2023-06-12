@@ -39,6 +39,6 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          access_token: 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
+          access_token: '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'
           branch: main
           folder: packages/site/docs/.vitepress/dist
