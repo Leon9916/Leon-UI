@@ -41,5 +41,6 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
           token: ${{ secrets.LEON9916 }}
+          name: dist
           publish_dir: packages/site/docs/.vitepress/dist
           cleanup: false
