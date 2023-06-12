@@ -13,7 +13,7 @@ export default defineConfig({
         }
       },
     },
-    preserveSymlinks: false // 将硬链接转换为常规文件
+    preserveSymlinks: true // 将硬链接转换为常规文件
    }
   },
   css: {
