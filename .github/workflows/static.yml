@@ -32,11 +32,6 @@ jobs:
         run: pnpm install --frozen-lockfile=false
       - name: Build docs
         run: pnpm run docs:build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: docs
-          path: packages/site/docs/.vitepress/dist
       - name: Deploy to Pages
         uses: actions/deploy-pages@v2
         with:
