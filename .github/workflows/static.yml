@@ -33,14 +33,17 @@ jobs:
       - name: Build docs
         run: pnpm run docs:build
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: dist
           path: packages/site/docs/.vitepress/dist
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
       - name: Deploy to Pages
         uses: actions/deploy-pages@v2
         with:
           token: ${{ secrets.LEON9916 }}
-          artifact_name: dist
-          target_dir: packages/site/docs/.vitepress/dist
+          publish_dir: ${{ github.workspace }}/packages/site/docs/.vitepress/dist
           cleanup: true
