@@ -27,9 +27,9 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Build docs
-        run: npm run docs:build
+        run: pnpm run docs:build
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
