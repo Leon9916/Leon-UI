@@ -41,5 +41,4 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
           artifact_name: 'artifact'
-          token: ${{ secrets.LEON9916 }}
           cleanup: true
