@@ -35,8 +35,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: docs
-          path: ./packages/site/docs/.vitepress/dist
+          name: dist
+          path: packages/site/docs/.vitepress
       - name: Deploy to Pages
         uses: actions/deploy-pages@v2
         with:
