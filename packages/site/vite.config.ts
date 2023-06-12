@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
    rollupOptions: {
-    preserveSymlinks: true // 将硬链接转换为常规文件
+    preserveSymlinks: false // 将硬链接转换为常规文件
    }
   },
   css: {
