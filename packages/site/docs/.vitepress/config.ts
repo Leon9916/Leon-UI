@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 import vitePluginVitepressDemo from "vite-plugin-vitepress-demo";
 
 export default defineConfig({
+  outDir: '../../../docs',
   vite: {
     plugins: [
       vitePluginVitepressDemo({

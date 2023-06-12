@@ -1,36 +1,27 @@
 {
-  "hash": "0f7ea37b",
-  "browserHash": "41493d37",
+  "hash": "d30687bf",
+  "browserHash": "12cc5557",
   "optimized": {
     "vue": {
       "src": "../../../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7d53bd2c",
+      "fileHash": "391e7bfc",
       "needsInterop": false
     },
     "vite-plugin-vitepress-demo/theme": {
       "src": "../../../../../../node_modules/.pnpm/vite-plugin-vitepress-demo@2.0.0-alpha.8_vitepress@1.0.0-alpha.63_vue@3.3.4/node_modules/vite-plugin-vitepress-demo/dist/theme/index.mjs",
       "file": "vite-plugin-vitepress-demo_theme.js",
-      "fileHash": "5874ffb6",
+      "fileHash": "bf957119",
       "needsInterop": false
     },
     "ant-design-vue": {
       "src": "../../../../../../node_modules/.pnpm/ant-design-vue@3.2.20_vue@3.2.36/node_modules/ant-design-vue/es/index.js",
       "file": "ant-design-vue.js",
-      "fileHash": "f6106bc3",
-      "needsInterop": false
-    },
-    "@ant-design/icons-vue": {
-      "src": "../../../../../../node_modules/.pnpm/@ant-design+icons-vue@6.1.0_vue@3.2.36/node_modules/@ant-design/icons-vue/es/index.js",
-      "file": "@ant-design_icons-vue.js",
-      "fileHash": "fe46f473",
+      "fileHash": "18e5c737",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-7W2FMFJB": {
-      "file": "chunk-7W2FMFJB.js"
-    },
     "chunk-OPYEAFVN": {
       "file": "chunk-OPYEAFVN.js"
     },
