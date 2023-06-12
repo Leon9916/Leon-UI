@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 import vitePluginVitepressDemo from "vite-plugin-vitepress-demo";
 
 export default defineConfig({
-  base: 'Leon-UI', // 修改打包之后文件的默认前缀
+  base: './', // 修改打包之后文件的默认前缀
   outDir: '../../../docs', // 修改打包之后文件的目录
   vite: {
     plugins: [
