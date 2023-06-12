@@ -41,4 +41,4 @@ jobs:
         with:
           access_token: ${{ secrets.ACCESS_TOKEN }}
           branch: main
-          folder: packages/site/docs/.vitepress/dist/index.html
+          folder: packages/site/docs/.vitepress/dist
