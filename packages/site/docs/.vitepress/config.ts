@@ -23,10 +23,10 @@ export default defineConfig({
   description: "Vue基础组件库",
   lang: "zh-CN",
   lastUpdated: true,
-  head: [["link", { rel: "icon", href: "https://p3-passport.byteimg.com/img/user-avatar/d8bc7351ac3c93b11cd3146be24a0cba~100x100.awebp" }]],
+  head: [["link", { rel: "icon", href: "https://cdn-us.imgs.moe/2023/06/13/64885bcb8efd8.png" }]],
   themeConfig: {
     siteTitle: "Leon UI",
-    logo: "https://p3-passport.byteimg.com/img/user-avatar/d8bc7351ac3c93b11cd3146be24a0cba~100x100.awebp",
+    logo: "https://cdn-us.imgs.moe/2023/06/13/64885bcb8efd8.png",
     nav: [
       { text: "首页", link: "/" },
       { text: "指南", link: "/guide/getting-started" },
