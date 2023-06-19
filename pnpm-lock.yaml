@@ -44,7 +44,7 @@ importers:
 
   packages/site:
     dependencies:
-      Leon-ui:
+      leon-ui:
         specifier: workspace:*
         version: link:../components
       vue:

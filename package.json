@@ -1,13 +1,13 @@
 {
-  "name": "Leon-UI",
-  "version": "1.0.0",
+  "name": "leon-ui",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm --filter Leon-ui build",
+    "build": "pnpm --filter leon-ui build",
     "dev": "pnpm run --filter site dev",
     "docs:build": "pnpm run --filter site build",
-    "pub":"pnpm build && pnpm publish --filter Leon-ui"
+    "pub":"pnpm build && pnpm publish --filter leon-ui"
   },
   "keywords": [],
   "author": "",

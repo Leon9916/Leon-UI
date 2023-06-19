@@ -12,7 +12,7 @@ export default defineConfig({
         index: resolve(__dirname, "./src/index.ts"),
       },
       formats: ["es"],
-      name: "Leon-ui",
+      name: "leon-ui",
     },
     minify: false,
     rollupOptions: {

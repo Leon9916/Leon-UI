@@ -39,11 +39,11 @@ An enterprise-class UI components based on Ant Design and Vue 3.
 ### 使用 npm 或 yarn 安装
 
 ```bash
-$ npm install Leon-ui --save
+$ npm install leon-ui --save
 ```
 
 ```bash
-$ yarn add Leon-ui
+$ yarn add leon-ui
 ```
 
 如果你的网络环境不佳，推荐使用 [cnpm](https://github.com/cnpm/cnpm)。

@@ -1,4 +1,4 @@
 import { ExtractPropTypes } from "vue";
-import UiButton from "./UiButton.vue";
+import LoButton from "./LoButton.vue";
 
-export type UiButtonProps = ExtractPropTypes<typeof UiButton>;
+export type LoButtonProps = ExtractPropTypes<typeof LoButton>;

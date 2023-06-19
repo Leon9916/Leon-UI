@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Leon-UI.iml" filepath="$PROJECT_DIR$/.idea/Leon-UI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/leon-ui.iml" filepath="$PROJECT_DIR$/.idea/leon-ui.iml" />
     </modules>
   </component>
 </project>
